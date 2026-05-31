@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii — Dr. Liuba Garaga</title>
+    <meta name="description" content="Servicii dermatologice și estetice oferite de Dr. Liuba Garaga: consultații, dermatoscopie, proceduri estetice, botox, peeling, mezoterapie.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="static/img/logo1778433187040.png" alt="Dr. Liuba Garaga" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html" data-ro="Despre mine" data-en="About Me">Despre mine</a></li>
+                <li><a href="services.html" class="active" data-ro="Servicii" data-en="Services">Servicii</a></li>
+                <li><a href="booking.html" data-ro="Programare" data-en="Booking">Programare</a></li>
+                <li><a href="contact.html" data-ro="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-active">RO</span> / <span class="lang-inactive">EN</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-ro="Servicii" data-en="Services">Servicii</h1>
+            <p class="page-subtitle" data-ro="Oferim o gamă completă de servicii dermatologice și estetice" data-en="We offer a full range of dermatological and aesthetic services">Oferim o gamă completă de servicii dermatologice și estetice</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Consultations -->
+                <div class="service-card expandable" onclick="toggleService(this)">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C12.96 4 4 12.96 4 24s8.96 20 20 20 20-8.96 20-20S35.04 4 24 4zm2 30h-4v-4h4v4zm4.13-15.49l-1.79 1.84C27.1 21.59 26 22.6 26 25h-4v-1c0-1.77 1.1-3.39 2.34-4.63l2.49-2.52A2.99 2.99 0 0028 14a4 4 0 00-8 0h-4a8 8 0 1116 0c0 1.77-.89 3.28-1.87 4.51z" fill="currentColor"/></svg>
+                        </div>
+                        <h3 data-ro="Consultații" data-en="Consultations">Consultații</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <ul class="service-list">
+                        <li data-ro="Consultație dermatologică" data-en="Dermatological consultation">Consultație dermatologică</li>
+                        <li data-ro="Control" data-en="Follow-up visit">Control</li>
+                    </ul>
+                    <div class="service-details">
+                        <p class="text-ro">Consultația dermatologică include evaluarea completă a pielii, diagnosticarea afecțiunilor cutanate și recomandări personalizate de tratament. Folosim echipamente moderne pentru o diagnoză precisă.</p>
+                        <p class="text-en" style="display:none;">The dermatological consultation includes a complete skin evaluation, diagnosis of skin conditions, and personalized treatment recommendations. We use modern equipment for precise diagnosis.</p>
+                        <a href="contact.html" class="btn btn-secondary" data-ro="Programează" data-en="Book">Programează</a>
+                    </div>
+                </div>
+
+                <!-- Diagnostic -->
+                <div class="service-card expandable" onclick="toggleService(this)">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.45 27.05c-2.53 0-4.88.87-6.72 2.34L19.5 24.16l5.23-5.23A9.96 9.96 0 0031.45 21c5.52 0 10-4.48 10-10s-4.48-10-10-10-10 4.48-10 10c0 2.53.94 4.84 2.49 6.61L18.71 22.84l-5.23-5.23A9.96 9.96 0 0016.55 11c0-5.52-4.48-10-10-10S-3.45 5.48-3.45 11s4.48 10 10 10c2.53 0 4.84-.94 6.61-2.49l5.23 5.23-5.23 5.23A9.96 9.96 0 006.55 27c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10c0-2.53-.94-4.84-2.49-6.61l5.23-5.23 5.23 5.23A9.96 9.96 0 0021.45 37c0 5.52 4.48 10 10 10s10-4.48 10-10-4.48-10-10-10z" fill="currentColor"/></svg>
+                        </div>
+                        <h3 data-ro="Diagnostic" data-en="Diagnostics">Diagnostic</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <ul class="service-list">
+                        <li data-ro="Dermatoscopie" data-en="Dermoscopy">Dermatoscopie</li>
+                        <li data-ro="Biopsie / Excizie" data-en="Biopsy / Excision">Biopsie / Excizie</li>
+                    </ul>
+                    <div class="service-details">
+                        <p class="text-ro">Dermatoscopia este o metodă neinvazivă de examinare a leziunilor cutanate cu ajutorul unui dermatoscop digital. Permite detectarea precoce a melanomului și a altor tipuri de cancer de piele. Biopsia cutanată este recomandată pentru confirmarea diagnosticului.</p>
+                        <p class="text-en" style="display:none;">Dermoscopy is a non-invasive method of examining skin lesions using a digital dermatoscope. It allows early detection of melanoma and other types of skin cancer. Skin biopsy is recommended to confirm the diagnosis.</p>
+                        <a href="contact.html" class="btn btn-secondary" data-ro="Programează" data-en="Book">Programează</a>
+                    </div>
+                </div>
+
+                <!-- Proceduri -->
+                <div class="service-card expandable" onclick="toggleService(this)">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 2L6 10v12c0 11.11 7.67 21.47 18 24 10.33-2.53 18-12.89 18-24V10L24 2zm-4 32l-8-8 2.83-2.83L20 28.34l13.17-13.17L36 18 20 34z" fill="currentColor"/></svg>
+                        </div>
+                        <h3 data-ro="Proceduri" data-en="Procedures">Proceduri</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <ul class="service-list">
+                        <li data-ro="Crioterapie" data-en="Cryotherapy">Crioterapie</li>
+                        <li data-ro="Electrocauterizare" data-en="Electrocauterization">Electrocauterizare</li>
+                        <li data-ro="Infiltrație cu corticosteroizi" data-en="Corticosteroid infiltration">Infiltrație cu corticosteroizi</li>
+                    </ul>
+                    <div class="service-details">
+                        <p class="text-ro">Crioterapia utilizează azot lichid pentru tratarea verucilor, keratozelor și altor leziuni benigne. Electrocauterizarea elimină rapid formațiunile cutanate nedorite. Infiltrațiile cu corticosteroizi sunt eficiente pentru leziuni inflamatorii și cicatrici.</p>
+                        <p class="text-en" style="display:none;">Cryotherapy uses liquid nitrogen to treat warts, keratoses, and other benign lesions. Electrocauterization quickly removes unwanted skin formations. Corticosteroid infiltrations are effective for inflammatory lesions and scars.</p>
+                        <a href="contact.html" class="btn btn-secondary" data-ro="Programează" data-en="Book">Programează</a>
+                    </div>
+                </div>
+
+                <!-- Estetica -->
+                <div class="service-card expandable" onclick="toggleService(this)">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16 0-3.52 1.14-6.77 3.07-9.41C13.86 18.41 18.64 21 24 21s10.14-2.59 12.93-6.41C38.86 17.23 40 20.48 40 24c0 8.82-7.18 16-16 16z" fill="currentColor"/></svg>
+                        </div>
+                        <h3 data-ro="Estetică facială" data-en="Facial Aesthetics">Estetică facială</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <ul class="service-list">
+                        <li>Botox</li>
+                        <li data-ro="Augmentare buze" data-en="Lip augmentation">Augmentare buze</li>
+                        <li>Peeling</li>
+                        <li>Microneedling</li>
+                        <li>Biorepeel + Microneedling</li>
+                    </ul>
+                    <div class="service-details">
+                        <p class="text-ro">Botox-ul reduce ridurile de expresie pentru un aspect mai tânăr și odihnit. Augmentarea buzelor cu acid hialuronic oferă volum natural. Peeling-ul chimic și microneedling-ul stimulează regenerarea pielii pentru un ten luminos și uniform.</p>
+                        <p class="text-en" style="display:none;">Botox reduces expression wrinkles for a younger, more rested appearance. Lip augmentation with hyaluronic acid provides natural volume. Chemical peeling and microneedling stimulate skin regeneration for a luminous and even complexion.</p>
+                        <a href="contact.html" class="btn btn-secondary" data-ro="Programează" data-en="Book">Programează</a>
+                    </div>
+                </div>
+
+                <!-- Mezoterapie -->
+                <div class="service-card expandable" onclick="toggleService(this)">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42 6H6v4h36V6zM6 42h36v-4H6v4zm0-8h36v-4H6v4zm0-8h36v-4H6v4zm0-8h36v-4H6v4z" fill="currentColor"/></svg>
+                        </div>
+                        <h3 data-ro="Mezoterapie" data-en="Mesotherapy">Mezoterapie</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <ul class="service-list">
+                        <li data-ro="Mezoterapie zonă perioculară (NCTF / Viscoderm / RRS Eyes)" data-en="Periocular mesotherapy (NCTF / Viscoderm / RRS Eyes)">Mezoterapie zonă perioculară (NCTF / Viscoderm / RRS Eyes)</li>
+                        <li data-ro="Mezoterapie față completă (NCTF / Viscoderm)" data-en="Full face mesotherapy (NCTF / Viscoderm)">Mezoterapie față completă (NCTF / Viscoderm)</li>
+                    </ul>
+                    <div class="service-details">
+                        <p class="text-ro">Mezoterapia facială constă în microinjecții cu vitamine, minerale și acid hialuronic pentru hidratare profundă și revitalizare. Zona perioculară primește tratament special pentru reducerea cearcănelor și a ridurilor fine din jurul ochilor.</p>
+                        <p class="text-en" style="display:none;">Facial mesotherapy consists of micro-injections with vitamins, minerals, and hyaluronic acid for deep hydration and revitalization. The periocular area receives special treatment to reduce dark circles and fine wrinkles around the eyes.</p>
+                        <a href="contact.html" class="btn btn-secondary" data-ro="Programează" data-en="Book">Programează</a>
+                    </div>
+                </div>
+
+                <!-- Tratamente speciale -->
+                <div class="service-card expandable" onclick="toggleService(this)">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 2C11.85 2 2 11.85 2 24s9.85 22 22 22 22-9.85 22-22S36.15 2 24 2zm0 40c-9.94 0-18-8.06-18-18S14.06 6 24 6s18 8.06 18 18-8.06 18-18 18zm-2-14h4v8h-4zm0-16h4v12h-4z" fill="currentColor"/></svg>
+                        </div>
+                        <h3 data-ro="Tratamente speciale" data-en="Special Treatments">Tratamente speciale</h3>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <ul class="service-list">
+                        <li data-ro="Tratament PRP scalp" data-en="PRP scalp treatment">Tratament PRP scalp</li>
+                        <li data-ro="Microneedling + PRP scalp" data-en="Microneedling + PRP scalp">Microneedling + PRP scalp</li>
+                        <li data-ro="PRP față" data-en="PRP face">PRP față</li>
+                        <li data-ro="Mască facială hidratantă" data-en="Hydrating facial mask">Mască facială hidratantă</li>
+                    </ul>
+                    <div class="service-details">
+                        <p class="text-ro">Tratamentul PRP (Plasma Bogată în Trombocite) folosește propriul sânge pentru a stimula regenerarea naturală. PRP scalp combate căderea părului și stimulează creșterea. PRP facial oferă întinerire naturală a tenului, iar măștile hidratante completează orice tratament.</p>
+                        <p class="text-en" style="display:none;">PRP (Platelet-Rich Plasma) treatment uses your own blood to stimulate natural regeneration. Scalp PRP fights hair loss and stimulates growth. Facial PRP provides natural skin rejuvenation, and hydrating masks complement any treatment.</p>
+                        <a href="contact.html" class="btn btn-secondary" data-ro="Programează" data-en="Book">Programează</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Images -->
+    <section class="section services-showcase">
+        <div class="container">
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <img src="static/img/3024E4A1-65E1-4492-8816-7193C997CECD.PNG" alt="Tratamente dermatologice">
+                </div>
+                <div class="showcase-item">
+                    <img src="static/img/6903077C-9811-4D72-8397-EA0880B6F8C6.PNG" alt="Proceduri estetice">
+                </div>
+                <div class="showcase-item">
+                    <img src="static/img/7631AD92-F593-4853-B4EC-558DD586397C.PNG" alt="Rezultate tratamente">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 data-ro="Programează o consultație" data-en="Schedule a consultation">Programează o consultație</h2>
+                <p data-ro="Programarea online va fi disponibilă în curând. Între timp, contactați-ne telefonic pentru a fixa o programare." data-en="Online booking will be available soon. In the meantime, contact us by phone to schedule an appointment.">Programarea online va fi disponibilă în curând. Între timp, contactați-ne telefonic pentru a fixa o programare.</p>
+                <a href="contact.html" class="btn btn-primary" data-ro="Contactează-ne" data-en="Contact Us">Contactează-ne</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="static/img/logo1778433187040.png" alt="Dr. Liuba Garaga" class="footer-logo">
+                    <p data-ro="Medic specialist dermatovenerolog" data-en="Dermatology Specialist">Medic specialist dermatovenerolog</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html" data-ro="Despre mine" data-en="About Me">Despre mine</a>
+                    <a href="services.html" data-ro="Servicii" data-en="Services">Servicii</a>
+                    <a href="booking.html" data-ro="Programare" data-en="Booking">Programare</a>
+                    <a href="contact.html" data-ro="Contact" data-en="Contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Liuba Garaga. <span data-ro="Toate drepturile rezervate." data-en="All rights reserved.">Toate drepturile rezervate.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

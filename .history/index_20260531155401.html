@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Liuba Garaga — Dermatolog</title>
+    <meta name="description" content="Dr. Liuba Garaga - Medic specialist dermatovenerolog în Toplița. Consultații, dermatoscopie, proceduri estetice și tratamente dermatologice.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="static/img/logo1778433187040.png" alt="Dr. Liuba Garaga" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html" data-ro="Despre mine" data-en="About Me">Despre mine</a></li>
+                <li><a href="services.html" data-ro="Servicii" data-en="Services">Servicii</a></li>
+                <li><a href="booking.html" data-ro="Programare" data-en="Booking">Programare</a></li>
+                <li><a href="contact.html" data-ro="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span class="lang-active">RO</span> / <span class="lang-inactive">EN</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" style="background-image: url('static/img/81.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <p class="hero-greeting" data-ro="Bine ați venit" data-en="Welcome">Bine ați venit</p>
+            <h1 class="hero-title">Dr. Liuba Garaga</h1>
+            <p class="hero-subtitle" data-ro="Medic specialist dermatovenerolog" data-en="Dermatology Specialist">Medic specialist dermatovenerolog</p>
+            <a href="booking.html" class="btn btn-primary" data-ro="Programează-te" data-en="Book Now">Programează-te</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-ro="Servicii" data-en="Services">Servicii</h2>
+            <p class="section-subtitle" data-ro="Oferim o gamă completă de servicii dermatologice și estetice" data-en="We offer a full range of dermatological and aesthetic services">Oferim o gamă completă de servicii dermatologice și estetice</p>
+
+            <div class="services-grid">
+                <!-- Consultations -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C12.96 4 4 12.96 4 24s8.96 20 20 20 20-8.96 20-20S35.04 4 24 4zm2 30h-4v-4h4v4zm4.13-15.49l-1.79 1.84C27.1 21.59 26 22.6 26 25h-4v-1c0-1.77 1.1-3.39 2.34-4.63l2.49-2.52A2.99 2.99 0 0028 14a4 4 0 00-8 0h-4a8 8 0 1116 0c0 1.77-.89 3.28-1.87 4.51z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 data-ro="Consultații" data-en="Consultations">Consultații</h3>
+                    <ul class="service-list">
+                        <li data-ro="Consultație dermatologică" data-en="Dermatological consultation">Consultație dermatologică</li>
+                        <li data-ro="Control" data-en="Follow-up visit">Control</li>
+                    </ul>
+                </div>
+
+                <!-- Diagnostic -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.45 27.05c-2.53 0-4.88.87-6.72 2.34L19.5 24.16l5.23-5.23A9.96 9.96 0 0031.45 21c5.52 0 10-4.48 10-10s-4.48-10-10-10-10 4.48-10 10c0 2.53.94 4.84 2.49 6.61L18.71 22.84l-5.23-5.23A9.96 9.96 0 0016.55 11c0-5.52-4.48-10-10-10S-3.45 5.48-3.45 11s4.48 10 10 10c2.53 0 4.84-.94 6.61-2.49l5.23 5.23-5.23 5.23A9.96 9.96 0 006.55 27c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10c0-2.53-.94-4.84-2.49-6.61l5.23-5.23 5.23 5.23A9.96 9.96 0 0021.45 37c0 5.52 4.48 10 10 10s10-4.48 10-10-4.48-10-10-10z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 data-ro="Diagnostic" data-en="Diagnostics">Diagnostic</h3>
+                    <ul class="service-list">
+                        <li data-ro="Dermatoscopie" data-en="Dermoscopy">Dermatoscopie</li>
+                        <li data-ro="Biopsie / Excizie" data-en="Biopsy / Excision">Biopsie / Excizie</li>
+                    </ul>
+                </div>
+
+                <!-- Proceduri -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 2L6 10v12c0 11.11 7.67 21.47 18 24 10.33-2.53 18-12.89 18-24V10L24 2zm-4 32l-8-8 2.83-2.83L20 28.34l13.17-13.17L36 18 20 34z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 data-ro="Proceduri" data-en="Procedures">Proceduri</h3>
+                    <ul class="service-list">
+                        <li data-ro="Crioterapie" data-en="Cryotherapy">Crioterapie</li>
+                        <li data-ro="Electrocauterizare" data-en="Electrocauterization">Electrocauterizare</li>
+                        <li data-ro="Infiltrație cu corticosteroizi" data-en="Corticosteroid infiltration">Infiltrație cu corticosteroizi</li>
+                    </ul>
+                </div>
+
+                <!-- Estetica -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16 0-3.52 1.14-6.77 3.07-9.41C13.86 18.41 18.64 21 24 21s10.14-2.59 12.93-6.41C38.86 17.23 40 20.48 40 24c0 8.82-7.18 16-16 16z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 data-ro="Estetică facială" data-en="Facial Aesthetics">Estetică facială</h3>
+                    <ul class="service-list">
+                        <li>Botox</li>
+                        <li data-ro="Augmentare buze" data-en="Lip augmentation">Augmentare buze</li>
+                        <li>Peeling</li>
+                        <li>Microneedling</li>
+                        <li>Biorepeel + Microneedling</li>
+                    </ul>
+                </div>
+
+                <!-- Mezoterapie -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42 6H6v4h36V6zM6 42h36v-4H6v4zm0-8h36v-4H6v4zm0-8h36v-4H6v4zm0-8h36v-4H6v4z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 data-ro="Mezoterapie" data-en="Mesotherapy">Mezoterapie</h3>
+                    <ul class="service-list">
+                        <li data-ro="Mezoterapie zonă perioculară (NCTF / Viscoderm / RRS Eyes)" data-en="Periocular mesotherapy (NCTF / Viscoderm / RRS Eyes)">Mezoterapie zonă perioculară (NCTF / Viscoderm / RRS Eyes)</li>
+                        <li data-ro="Mezoterapie față completă (NCTF / Viscoderm)" data-en="Full face mesotherapy (NCTF / Viscoderm)">Mezoterapie față completă (NCTF / Viscoderm)</li>
+                    </ul>
+                </div>
+
+                <!-- Tratamente speciale -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 2C11.85 2 2 11.85 2 24s9.85 22 22 22 22-9.85 22-22S36.15 2 24 2zm0 40c-9.94 0-18-8.06-18-18S14.06 6 24 6s18 8.06 18 18-8.06 18-18 18zm-2-14h4v8h-4zm0-16h4v12h-4z" fill="currentColor"/></svg>
+                    </div>
+                    <h3 data-ro="Tratamente speciale" data-en="Special Treatments">Tratamente speciale</h3>
+                    <ul class="service-list">
+                        <li data-ro="Tratament PRP scalp" data-en="PRP scalp treatment">Tratament PRP scalp</li>
+                        <li data-ro="Microneedling + PRP scalp" data-en="Microneedling + PRP scalp">Microneedling + PRP scalp</li>
+                        <li data-ro="PRP față" data-en="PRP face">PRP față</li>
+                        <li data-ro="Mască facială hidratantă" data-en="Hydrating facial mask">Mască facială hidratantă</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-ro="Despre mine" data-en="About Me">Despre mine</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="static/img/6DABCEB7-9707-477E-9E4E-37D7E1695E34.JPG" alt="Dr. Liuba Garaga" class="doctor-photo">
+                </div>
+                <div class="about-text">
+                    <div data-ro-block data-en-block>
+                        <div class="text-ro">
+                            <p>Afecțiunile pielii pot afecta profund încrederea în sine și calitatea vieții. Iar faptul că pot ajuta pacienții să se simtă din nou bine în pielea lor este unul dintre motivele pentru care iubesc această specialitate.</p>
+                            <p>De la diagnosticul atent, până la mici intervenții și proceduri estetice, dermatologia este pentru mine un mix între știință și artă.</p>
+                            <p>M-am format în cadrul Centrului Universitar din Târgu Mureș, lucrând în echipa coordonată de domnul profesor Silviu Morariu — o experiență care mi-a consolidat pasiunea pentru dermatologie și grija pentru pacient.</p>
+                            <p>Pentru că această specialitate este într-o continuă evoluție, iar învățarea nu se oprește niciodată, cursurile și conferințele, inclusiv în domeniul esteticii nu au lipsit din drumul meu profesional.</p>
+                            <p>Îmi doresc să aduc tot ceea ce am învățat pacienților mei 🤍</p>
+                            <p class="about-signature">Sunt dr. Garaga Liuba, medic specialist dermatovenerolog.<br>Bine ați venit pe pagina mea! 💕</p>
+                        </div>
+                        <div class="text-en" style="display:none;">
+                            <p>Skin conditions can deeply affect self-confidence and quality of life. The fact that I can help patients feel good in their own skin again is one of the reasons I love this specialty.</p>
+                            <p>From careful diagnosis to minor procedures and aesthetic treatments, dermatology is for me a mix of science and art.</p>
+                            <p>I trained at the University Center of Târgu Mureș, working in the team led by Professor Silviu Morariu — an experience that strengthened my passion for dermatology and patient care.</p>
+                            <p>Because this specialty is constantly evolving and learning never stops, courses and conferences, including in the field of aesthetics, have always been part of my professional journey.</p>
+                            <p>I want to bring everything I have learned to my patients 🤍</p>
+                            <p class="about-signature">I am Dr. Garaga Liuba, dermatology specialist.<br>Welcome to my page! 💕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking" id="booking">
+        <div class="container">
+            <div class="booking-card">
+                <div class="booking-icon">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="12" width="48" height="44" rx="4" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <line x1="8" y1="24" x2="56" y2="24" stroke="currentColor" stroke-width="3"/>
+                        <line x1="20" y1="8" x2="20" y2="16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="44" y1="8" x2="44" y2="16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="32" cy="40" r="6" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h2 data-ro="Programare" data-en="Book an Appointment">Programare</h2>
+                <div class="text-ro">
+                    <p class="booking-text">Programarea online va fi disponibilă în curând! Între timp, ne puteți contacta direct pentru a fixa o programare.</p>
+                </div>
+                <div class="text-en" style="display:none;">
+                    <p class="booking-text">Online booking will be available soon! In the meantime, you can contact us directly to schedule an appointment.</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary" data-ro="Contactează-ne" data-en="Contact Us">Contactează-ne</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-ro="Contact" data-en="Contact">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <h4 data-ro="Adresă" data-en="Address">Adresă</h4>
+                            <p>Str. Eroilor 10, Toplița, România</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <h4 data-ro="Telefon" data-en="Phone">Telefon</h4>
+                            <p><a href="tel:+40700000000">+40 700 000 000</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:contact@drgaraga.ro">contact@drgaraga.ro</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps?q=Eroilor+10,+Toplita,+Romania&output=embed"
+                            width="100%"
+                            height="300"
+                            style="border:0; border-radius: 12px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Locație cabinet Dr. Liuba Garaga">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3 data-ro="Trimite-ne un mesaj" data-en="Send us a message">Trimite-ne un mesaj</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-ro="Nume complet" data-en="Full name">Nume complet</label>
+                            <input type="text" id="name" name="name" required data-ro-placeholder="Numele dumneavoastră" data-en-placeholder="Your name" placeholder="Numele dumneavoastră">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-ro="E-mail" data-en="E-mail">E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="email@exemplu.ro">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-ro="Telefon" data-en="Phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" data-ro-placeholder="Număr de telefon" data-en-placeholder="Phone number" placeholder="Număr de telefon">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-ro="Mesaj" data-en="Message">Mesaj</label>
+                            <textarea id="message" name="message" rows="5" required data-ro-placeholder="Scrieți mesajul dumneavoastră aici..." data-en-placeholder="Write your message here..." placeholder="Scrieți mesajul dumneavoastră aici..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-ro="Trimite mesajul" data-en="Send message">Trimite mesajul</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="static/img/logo1778433187040.png" alt="Dr. Liuba Garaga" class="footer-logo">
+                    <p data-ro="Medic specialist dermatovenerolog" data-en="Dermatology Specialist">Medic specialist dermatovenerolog</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html" data-ro="Despre mine" data-en="About Me">Despre mine</a>
+                    <a href="services.html" data-ro="Servicii" data-en="Services">Servicii</a>
+                    <a href="booking.html" data-ro="Programare" data-en="Booking">Programare</a>
+                    <a href="contact.html" data-ro="Contact" data-en="Contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Liuba Garaga. <span data-ro="Toate drepturile rezervate." data-en="All rights reserved.">Toate drepturile rezervate.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
