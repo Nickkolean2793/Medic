@@ -1223,11 +1223,6 @@ ul {
         display: none;
     }
 
-    .nav-links a.active {
-        background: #FFFFFF;
-        color: var(--color-primary-dark);
-    }
-
     .hamburger {
         display: flex;
         z-index: 1001;
