@@ -119,26 +119,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ===== Contact Form =====
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
 
-        // Show success message
-        const btn = contactForm.querySelector('button[type="submit"]');
-        const originalText = btn.textContent;
-        btn.textContent = currentLang === 'ro' ? '✓ Mesaj trimis!' : '✓ Message sent!';
-        btn.style.background = '#6B8F71';
-        btn.disabled = true;
+            // Show success message
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.textContent = currentLang === 'ro' ? '✓ Mesaj trimis!' : '✓ Message sent!';
+            btn.style.background = '#6B8F71';
+            btn.disabled = true;
 
-        setTimeout(() => {
-            btn.textContent = originalText;
-            btn.style.background = '';
-            btn.disabled = false;
-            contactForm.reset();
-        }, 3000);
-    });
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+                contactForm.reset();
+            }, 3000);
+        });
+    }
 
     // ===== Smooth scroll for anchor links =====
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -146,10 +148,28 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const offset = 72; // navbar height
+                const offset = 95; // navbar height
                 const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
                 window.scrollTo({ top, behavior: 'smooth' });
             }
         });
     });
 });
+
+// ===== Toggle Service Card =====
+function toggleService(card) {
+    // Don't toggle if clicking on a button or link inside
+    if (event.target.tagName === 'A' || event.target.tagName === 'BUTTON') {
+        return;
+    }
+    
+    // Close other expanded cards
+    document.querySelectorAll('.service-card.expanded').forEach(otherCard => {
+        if (otherCard !== card) {
+            otherCard.classList.remove('expanded');
+        }
+    });
+    
+    // Toggle current card
+    card.classList.toggle('expanded');
+}
