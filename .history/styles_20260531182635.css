@@ -1254,7 +1254,7 @@ ul {
     }
 
     .page-header {
-        padding: 140px 0 40px;
+        padding: 130px 0 40px;
     }
 
     .booking-card {
@@ -1298,7 +1298,6 @@ ul {
 
     .footer-logo {
         margin: 0 auto;
-        height: 90px;
     }
 }
 
@@ -1333,11 +1332,7 @@ ul {
     }
 
     .page-header {
-        padding: 120px 0 30px;
-    }
-
-    .footer-logo {
-        height: 80px;
+        padding: 110px 0 30px;
     }
 
     .gallery-grid {
