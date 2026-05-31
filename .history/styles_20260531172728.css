@@ -399,15 +399,6 @@ ul {
     margin: 0 auto 60px;
 }
 
-.section-description {
-    text-align: center;
-    color: var(--color-text);
-    font-size: 1rem;
-    max-width: 700px;
-    margin: 0 auto 40px;
-    line-height: 1.7;
-}
-
 /* ===== About ===== */
 .about {
     background: var(--color-bg);
