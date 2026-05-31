@@ -1234,7 +1234,7 @@ ul {
     }
 
     .page-header {
-        padding: 130px 0 40px;
+        padding: 120px 0 40px;
     }
 
     .booking-card {
@@ -1287,16 +1287,15 @@ ul {
     }
 
     .nav-container {
-        height: 70px;
+        height: 60px;
     }
 
     .logo-img {
-        height: 55px;
+        height: 45px;
     }
 
     .nav-links {
-        top: 70px;
-        background: #FDFBFC;
+        top: 60px;
     }
 
     .hero-title {
@@ -1308,7 +1307,7 @@ ul {
     }
 
     .page-header {
-        padding: 110px 0 30px;
+        padding: 100px 0 30px;
     }
 
     .gallery-grid {
